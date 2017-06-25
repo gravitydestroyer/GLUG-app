@@ -3,33 +3,37 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/icon"
+            android:icon="@drawable/workshop_icon"
+            android:title="Workshops" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/webg"
+            android:icon="@drawable/ico_swap"
+            android:title="Visit GLUG's website" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/webm"
+            android:icon="@drawable/ic_ch"
+            android:title="Visit MUKTI's Website" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/send"
+            android:icon="@drawable/black"
+            android:title="Download MUKTI's app" />
+
     </group>
 
     <item android:title="Communicate">
         <menu>
+
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/aboutus"
+                android:icon="@drawable/contacts_icon"
+                android:title="Contact us" />
+
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
                 android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+
         </menu>
     </item>
 

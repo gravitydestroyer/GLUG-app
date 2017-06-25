@@ -25,5 +25,20 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="faq"><u>FAQs:</u></string>
+    <string name="hwr">Q:WHO WE ARE AND WHAT ACTUALLY WE DO?</string>
+    <string name="hwr2">Ans:Glug stands for GNULINUX USERS GROUP.As the name suggests,we are a group of FOSS enthusiasts.We are a community of GNULinux and open source softwares</string>
+    <string name="foss">Q:WHAT DOES FOSS STANDS FOR?</string>
+    <string name="foss2">Ans:FOSS actually stands Free and open-source software.Free and open-source software is computer software that can be classified as both free software and open-source software. That is, anyone is freely licensed to use, copy, study, and change the software in any way, and the source code is openly shared so that people are encouraged to voluntarily improve the design of the software.</string>
+    <string name="work1">Q:DOES Glug CONDUCT WORKSHOPS? ?</string>
+    <string name="work2">Ans: Yes fellas! We do conduct workshops on Android App Development,Web development,hack.me and git.You just need to learn :)</string>
+    <string name="free">Q:HOW MUCH DO WE NEED TO PAY FOR THE WORKSHOPS?</string>
+    <string name="free2">Ans:Our club is an Open Source Club.Everything is FREE here!You dont even need to spend a single penny for any of our workshops.Attend them and gain knowledge! :)</string>
+    <string name="git">Q:WHATS IS GITHUB?</string>
+    <string name="git2">Ans:GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.Simply we can say github is the Facebook of code!! :) </string>
+    <string name="gsoc">Q:WHAT IS GSOC?</string>
+    <string name="gsoc2">Ans:The Google Summer of Code, often abbreviated to GSoC, is an international annual program, first held from May to August 2005,in which Google awards stipends, which depends on the purchasing power parity of the country the student\'s university belongs to,to all students who successfully complete a requested free and open-source software coding project during the summer. The program is open to university students aged 18 or over.</string>
 
 </resources>
+

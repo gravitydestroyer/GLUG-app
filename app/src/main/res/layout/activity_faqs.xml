@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gnulinuxusersgroup.nitdgp.glug.faqs"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/blck"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/F"
+            tools:text="@string/faq"
+            tools:textColor="#ffffff"
+            tools:textSize="100px"
+
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            tools:text="@string/hwr"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            tools:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            tools:text="@string/hwr2"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            tools:text="@string/foss"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            tools:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="269dp"
+            tools:text="@string/foss2"
+            tools:textColor="#fff"
+            tools:textSize="40px" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            tools:text="@string/work1"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            tools:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            tools:text="@string/work2"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            tools:text="@string/free"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            tools:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            tools:text="@string/free2"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            tools:text="@string/git"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            tools:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            tools:text="@string/git2"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            />
+        <TextView
+            android:layout_width="394dp"
+            android:layout_height="50dp"
+            tools:text="@string/gsoc"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            tools:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="700px"
+            tools:text="@string/gsoc2"
+            tools:textColor="#fff"
+            tools:textSize="40px"
+            />
+    </LinearLayout>
+
+</ScrollView>

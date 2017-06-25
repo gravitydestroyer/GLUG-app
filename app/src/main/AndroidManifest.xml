@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gnulinuxusersgroup.nitdgp.glug">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/glugicon"
@@ -19,7 +21,10 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".glugweb" />
+        <activity android:name=".muktiweb" />
+        <activity android:name=".faqs"></activity>
     </application>
 
 </manifest>

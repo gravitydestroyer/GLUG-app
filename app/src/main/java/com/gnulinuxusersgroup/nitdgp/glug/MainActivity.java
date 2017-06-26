@@ -82,6 +82,8 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         Intent glgw=new Intent(MainActivity.this,glugweb.class);
         Intent glgm=new Intent(MainActivity.this,muktiweb.class);
+        Intent shareintent=new Intent(Intent.ACTION_SEND);
+        shareintent.setType("application/vnd.android.package-archive");
 
         int id = item.getItemId();
 
@@ -90,18 +92,20 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.webg) {
 
             startActivity(glgw);
-            Toast.makeText(this,"Glug",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"GNU/LINUX USERS'S GROUP",Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.webm) {
             startActivity(glgm);
-            Toast.makeText(this,"Glug",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"MUKTI",Toast.LENGTH_SHORT).show();
 
 
         } else if (id == R.id.aboutus) {
 
         } else if (id == R.id.share) {
 
-        } else if (id == R.id.send) {
+            startActivity(Intent.createChooser(shareintent,"share via"));
+
+        } else if (id == R.id.muktiapp) {
 
         }
 

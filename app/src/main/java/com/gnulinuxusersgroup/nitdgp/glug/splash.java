@@ -3,6 +3,7 @@ package com.gnulinuxusersgroup.nitdgp.glug;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class splash extends AppCompatActivity {
 
@@ -27,5 +28,6 @@ public class splash extends AppCompatActivity {
                 }
         };
         myThread.start();
+        Toast.makeText(this,"Welcome to The Offical app of GLUG",Toast.LENGTH_SHORT).show();
     }
 }

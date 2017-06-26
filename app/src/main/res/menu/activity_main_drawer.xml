@@ -15,7 +15,7 @@
             android:icon="@drawable/ic_ch"
             android:title="Visit MUKTI's Website" />
         <item
-            android:id="@+id/send"
+            android:id="@+id/muktiapp"
             android:icon="@drawable/black"
             android:title="Download MUKTI's app" />
 

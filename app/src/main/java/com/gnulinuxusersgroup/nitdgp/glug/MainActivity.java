@@ -1,6 +1,7 @@
 package com.gnulinuxusersgroup.nitdgp.glug;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -29,8 +30,17 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+                Intent text=new Intent(Intent.ACTION_SEND);
+                text.setType("message/rfc822");
+                text.putExtra(Intent.EXTRA_EMAIL  , new String[]{"contact@nitdgplug.org"});
+                text.putExtra(Intent.EXTRA_SUBJECT, "Queries");
+                try {
+                    startActivity(Intent.createChooser(text, "Send mail..."));
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(MainActivity.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -84,6 +94,9 @@ public class MainActivity extends AppCompatActivity
         Intent glgm=new Intent(MainActivity.this,muktiweb.class);
         Intent shareintent=new Intent(Intent.ACTION_SEND);
         shareintent.setType("application/vnd.android.package-archive");
+        Intent play = new Intent(android.content.Intent.ACTION_VIEW);
+        play.setData(Uri.parse("https://play.google.com/store/apps/details?id=nitdgp.glug.somesh1995.mukti2017_2&hl=en"));
+
 
         int id = item.getItemId();
 
@@ -106,6 +119,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(Intent.createChooser(shareintent,"share via"));
 
         } else if (id == R.id.muktiapp) {
+            startActivity(play);
 
         }
 

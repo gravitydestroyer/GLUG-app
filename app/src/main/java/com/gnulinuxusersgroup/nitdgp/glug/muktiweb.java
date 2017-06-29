@@ -22,14 +22,4 @@ public class muktiweb extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed()
-    {
-        if(webb.canGoBack())
-        {
-            webb.goBack();
-        }
-        else
-            super.onBackPressed();
-    }
 }

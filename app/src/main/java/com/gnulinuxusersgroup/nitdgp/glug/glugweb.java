@@ -21,14 +21,4 @@ public class glugweb extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onBackPressed()
-    {
-        if(web.canGoBack())
-        {
-            web.goBack();
-        }
-        else
-            super.onBackPressed();
-    }
 }

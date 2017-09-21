@@ -3,122 +3,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/blck"
+    android:weightSum="1"
+
     tools:context="com.gnulinuxusersgroup.nitdgp.glug.faqs"
     app:layout_collapseParallaxMultiplier="1.0">
 
     <!-- TODO: Update blank fragment layout -->
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/blck"
-        android:weightSum="1">
+
+       >
 
 
-        <TextView
+
+    <TextView
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="110dp"
             android:id="@+id/F"
-            tools:text="@string/faq"
-            tools:textColor="#ffffff"
-            tools:textSize="100px"
+            android:text="@string/faq"
+            android:textColor="#ffffff"
+            android:textSize="70dp"
+            android:textAlignment="center"
 
-            android:textAppearance="@style/TextAppearance.AppCompat"
-            android:layout_weight="0.02" />
+            android:textAppearance="@style/TextAppearance.AppCompat" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="130px"
-            tools:text="@string/hwr"
-            tools:textColor="#fff"
-            tools:textSize="40px"
-            tools:textStyle="bold"
+            android:layout_height="96dp"
+            android:text="@string/hwr"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"
             />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="300px"
-            tools:text="@string/hwr2"
-            tools:textColor="#fff"
-            tools:textSize="40px"
+            android:layout_height="261dp"
+            android:text="@string/hwr2"
+            android:textColor="#fff"
+            android:textSize="27dp"
             />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="130px"
-            tools:text="@string/foss"
-            tools:textColor="#fff"
-            tools:textSize="40px"
-            tools:textStyle="bold"
+            android:layout_height="96dp"
+            android:text="@string/foss"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"
             />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="269dp"
-            tools:text="@string/foss2"
-            tools:textColor="#fff"
-            tools:textSize="40px" />
+            android:layout_height="507dp"
+            android:text="@string/foss2"
+            android:textColor="#fff"
+            android:textSize="27dp" />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="130px"
-            tools:text="@string/work1"
-            tools:textColor="#fff"
-            tools:textSize="40px"
-            tools:textStyle="bold"
+            android:layout_height="103dp"
+            android:text="@string/work1"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"
             />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="300px"
-            tools:text="@string/work2"
-            tools:textColor="#fff"
-            tools:textSize="40px"
+            android:layout_height="215dp"
+            android:text="@string/work2"
+            android:textColor="#fff"
+            android:textSize="27dp"
             />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="130px"
-            tools:text="@string/free"
-            tools:textColor="#fff"
-            tools:textSize="40px"
-            tools:textStyle="bold"
+            android:layout_height="122dp"
+            android:text="@string/free"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"
             />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="300px"
-            tools:text="@string/free2"
-            tools:textColor="#fff"
-            tools:textSize="40px"
+            android:layout_height="223dp"
+            android:text="@string/free2"
+            android:textColor="#fff"
+            android:textSize="27dp"
             />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="46dp"
-            tools:text="@string/git"
-            tools:textColor="#fff"
-            tools:textSize="40px"
-            tools:textStyle="bold"
+            android:layout_height="73dp"
+            android:text="@string/git"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"
             />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="300px"
-            tools:text="@string/git2"
-            tools:textColor="#fff"
-            tools:textSize="40px"
+            android:layout_height="294dp"
+            android:text="@string/git2"
+            android:textColor="#fff"
+            android:textSize="27dp"
             />
         <TextView
             android:layout_width="394dp"
-            android:layout_height="50dp"
-            tools:text="@string/gsoc"
-            tools:textColor="#fff"
-            tools:textSize="40px"
-            tools:textStyle="bold"
+            android:layout_height="75dp"
+            android:text="@string/gsoc"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"
             />
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="700px"
-            tools:text="@string/gsoc2"
-            tools:textColor="#fff"
-            tools:textSize="40px"
+            android:layout_height="554dp"
+            android:text="@string/gsoc2"
+            android:textColor="#fff"
+            android:textSize="27dp"
             />
     </LinearLayout>
-
 </ScrollView>
+

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.gnulinuxusersgroup.nitdgp.glug">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -24,7 +25,8 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".glugweb" />
         <activity android:name=".muktiweb" />
-        <activity android:name=".faqs"></activity>
+        <activity android:name=".faqs" />
+        <activity android:name=".firebase"></activity>
     </application>
 
 </manifest>

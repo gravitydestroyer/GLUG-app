@@ -1,38 +1,35 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blck"
+    android:background="@drawable/abst"
     android:weightSum="1"
 
     tools:context="com.gnulinuxusersgroup.nitdgp.glug.faqs"
     app:layout_collapseParallaxMultiplier="1.0">
 
-    <!-- TODO: Update blank fragment layout -->
 
+
+    <!-- TODO: Update blank fragment layout -->
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:paddingTop="90dp"
 
        >
 
 
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:id="@+id/F"
-            android:text="@string/faq"
-            android:textColor="#ffffff"
-            android:textSize="70dp"
-            android:textAlignment="center"
 
-            android:textAppearance="@style/TextAppearance.AppCompat" />
         <TextView
+            android:paddingTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="96dp"
+            android:layout_height="114dp"
             android:text="@string/hwr"
             android:textColor="#fff"
             android:textSize="30dp"
@@ -41,7 +38,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="261dp"
+            android:layout_height="277dp"
             android:text="@string/hwr2"
             android:textColor="#fff"
             android:textSize="27dp"
@@ -123,5 +120,6 @@
             android:textSize="27dp"
             />
     </LinearLayout>
-</ScrollView>
+     </ScrollView>
+</RelativeLayout>
 

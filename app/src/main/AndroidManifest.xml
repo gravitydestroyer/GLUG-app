@@ -21,12 +21,15 @@
         <activity android:name=".WelcomeActivity" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main"
+            android:label="GLUG"
             android:theme="@style/AppTheme" />
         <activity android:name=".glugweb" />
         <activity android:name=".muktiweb" />
         <activity android:name=".faqs" />
-        <activity android:name=".firebase"></activity>
+        <activity android:name=".Contacts" />
+        <activity android:name=".members" />
+        <activity android:name=".workshops" />
+        <activity android:name=".feedback"></activity>
     </application>
 
 </manifest>

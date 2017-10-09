@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("GNU/LINUX USERS'S GROUP");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +101,10 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.icon) {
+        if (id == R.id.workshop) {
+            Intent worksh=new Intent(this,workshops.class);
+            startActivity(worksh);
+
 
         } else if (id == R.id.webg) {
 
@@ -113,6 +117,8 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.aboutus) {
+            Intent con=new Intent(this,Contacts.class);
+            startActivity(con);
 
         } else if (id == R.id.share) {
 
@@ -121,7 +127,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.muktiapp) {
             startActivity(play);
 
+        } else if (id == R.id.feed)
+        {
+            Intent feedintent=new Intent(this,feedback.class);
+            startActivity(feedintent);
         }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

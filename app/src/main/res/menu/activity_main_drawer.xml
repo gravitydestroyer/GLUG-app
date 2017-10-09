@@ -3,7 +3,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/icon"
+            android:id="@+id/workshop"
             android:icon="@drawable/workshop_icon"
             android:title="Workshops" />
         <item
@@ -18,6 +18,10 @@
             android:id="@+id/muktiapp"
             android:icon="@drawable/black"
             android:title="Download MUKTI's app" />
+        <item
+            android:id="@+id/feed"
+            android:icon="@drawable/feedbackico"
+            android:title="Feedback"/>
 
     </group>
 

@@ -6,7 +6,7 @@
     android:background="@drawable/abst"
     android:weightSum="1"
 
-    tools:context="com.gnulinuxusersgroup.nitdgp.glug.Faqs"
+    tools:context="com.gnulinuxusersgroup.nitdgp.glug.FaqsActivity"
     app:layout_collapseParallaxMultiplier="1.0">
 
 

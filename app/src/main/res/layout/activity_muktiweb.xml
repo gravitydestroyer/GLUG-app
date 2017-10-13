@@ -4,7 +4,7 @@
     android:id="@+id/activity_muktiweb"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gnulinuxusersgroup.nitdgp.glug.Muktiweb">
+    tools:context="com.gnulinuxusersgroup.nitdgp.glug.MuktiwebActivity">
 
     <WebView
         android:layout_width="match_parent"

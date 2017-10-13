@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abst"
+    android:weightSum="1"
+
+    tools:context="com.gnulinuxusersgroup.nitdgp.glug.FaqsActivity"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <!-- TODO: Update blank fragment layout -->
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="90dp">
+
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutus_title"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutus"
+            android:autoLink="web"
+            android:textColor="#fff"
+            android:textSize="27dp"
+            />
+
+
+
+    </LinearLayout>
+     </ScrollView>
+</RelativeLayout>
+

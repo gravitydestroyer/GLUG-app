@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">GLUG</string>
+    <string name="aboutus_title">About Us</string>
+    <string name="aboutus">This is a simple app that keeps us in touch with the events and proceedings of the GNU LINUX USERS GROUP,NIT DURGAPUR and the open-sourse fest MUKTI Feel free to contribute to our repository \n https://github.com/lugnitdgp/GLUG-app</string>
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>

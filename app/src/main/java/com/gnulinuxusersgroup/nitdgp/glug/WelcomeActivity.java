@@ -26,14 +26,14 @@ public class WelcomeActivity extends AppCompatActivity {
     private TextView[] dots;
     private int[] layouts;
     private Button btnSkip, btnNext;
-    private introduction xyz;
+    private Introduction xyz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Checking for first time launch - before calling setContentView()
-        xyz = new introduction(this);
+        xyz = new Introduction(this);
         if (!xyz.isFirstTimeLaunch()) {
             launchHomeScreen();
             finish();

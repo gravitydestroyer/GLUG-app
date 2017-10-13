@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class muktiweb extends AppCompatActivity {
+public class Muktiweb extends AppCompatActivity {
     private WebView webb;
 
     @Override

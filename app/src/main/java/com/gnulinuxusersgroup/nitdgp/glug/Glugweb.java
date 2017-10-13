@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class glugweb extends AppCompatActivity {
+public class Glugweb extends AppCompatActivity {
     private WebView web;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

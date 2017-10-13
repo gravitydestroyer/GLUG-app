@@ -15,7 +15,7 @@ import android.view.View;
  *
  * @author bherbst
  */
-public class workshops extends AppCompatActivity {
+public class Workshops extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override

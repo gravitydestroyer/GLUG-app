@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        Intent sett=new Intent(MainActivity.this,faqs.class);
+        Intent sett=new Intent(MainActivity.this,Faqs.class);
         //noinspection SimplifiableIfStatement
         if (id == R.id.faq) {
             startActivity(sett);
@@ -91,8 +90,8 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        Intent glgw=new Intent(MainActivity.this,glugweb.class);
-        Intent glgm=new Intent(MainActivity.this,muktiweb.class);
+        Intent glgw=new Intent(MainActivity.this,Glugweb.class);
+        Intent glgm=new Intent(MainActivity.this,Muktiweb.class);
         Intent shareintent=new Intent(Intent.ACTION_SEND);
         shareintent.setType("application/vnd.android.package-archive");
         Intent play = new Intent(android.content.Intent.ACTION_VIEW);
@@ -102,7 +101,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.workshop) {
-            Intent worksh=new Intent(this,workshops.class);
+            Intent worksh=new Intent(this,Workshops.class);
             startActivity(worksh);
 
 
@@ -129,7 +128,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.feed)
         {
-            Intent feedintent=new Intent(this,feedback.class);
+            Intent feedintent=new Intent(this,Feedback.class);
             startActivity(feedintent);
         }
 

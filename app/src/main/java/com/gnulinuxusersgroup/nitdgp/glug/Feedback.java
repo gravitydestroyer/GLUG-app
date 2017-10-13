@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class feedback extends AppCompatActivity {
+public class Feedback extends AppCompatActivity {
 
     private WebView web;
 
@@ -16,7 +16,7 @@ public class feedback extends AppCompatActivity {
 
         WebView web = (WebView) findViewById(R.id.feed);
         web.setWebViewClient(new WebViewClient());
-        web.loadUrl("http://feedback.nitdgplug.org");
+        web.loadUrl("http://Feedback.nitdgplug.org");
         web.getSettings().setJavaScriptEnabled(true);
         web.getSettings().setSupportZoom(true);
         web.getSettings().setBuiltInZoomControls(true);

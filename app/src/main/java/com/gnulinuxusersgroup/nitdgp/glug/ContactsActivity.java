@@ -2,12 +2,13 @@ package com.gnulinuxusersgroup.nitdgp.glug;
 
 import android.os.Build;
 import android.support.annotation.RequiresApi;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import com.gnulinuxusersgroup.nitdgp.glug.GridFragment;
+import com.gnulinuxusersgroup.nitdgp.glug.R;
 
-public class Contacts extends AppCompatActivity {
+public class ContactsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

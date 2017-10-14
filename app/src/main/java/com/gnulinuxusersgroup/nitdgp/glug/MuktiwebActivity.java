@@ -4,8 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import com.gnulinuxusersgroup.nitdgp.glug.R;
 
-public class muktiweb extends AppCompatActivity {
+public class MuktiwebActivity extends AppCompatActivity {
     private WebView webb;
 
     @Override

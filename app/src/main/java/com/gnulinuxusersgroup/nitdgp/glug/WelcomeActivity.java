@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,8 @@ import android.widget.TextView;
 
 public class WelcomeActivity extends AppCompatActivity {
 
+    public static final String FORCE_WELCOME_ACTIVITY = "forceWelcomeActivity";
+
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
     private LinearLayout dotsLayout;
@@ -27,16 +30,21 @@ public class WelcomeActivity extends AppCompatActivity {
     private int[] layouts;
     private Button btnSkip, btnNext;
     private IntroductionActivity xyz;
+    private boolean forceWelcomeActivity = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Checking for first time launch - before calling setContentView()
-        xyz = new IntroductionActivity(this);
-        if (!xyz.isFirstTimeLaunch()) {
-            launchHomeScreen();
-            finish();
+        forceWelcomeActivity = getIntent().getBooleanExtra(FORCE_WELCOME_ACTIVITY, false);
+
+        if (!forceWelcomeActivity) {
+            // Checking for first time launch - before calling setContentView()
+            xyz = new IntroductionActivity(this);
+            if (!xyz.isFirstTimeLaunch()) {
+                launchHomeScreen();
+                finish();
+            }
         }
 
         // Making notification bar transparent
@@ -50,7 +58,6 @@ public class WelcomeActivity extends AppCompatActivity {
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
         btnSkip = (Button) findViewById(R.id.btn_skip);
         btnNext = (Button) findViewById(R.id.btn_next);
-
 
         // layouts of all welcome sliders
         // add few more layouts if you want
@@ -117,9 +124,13 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
-        xyz.setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
-        finish();
+        if (forceWelcomeActivity) {
+            finish();
+        } else {
+            xyz.setFirstTimeLaunch(false);
+            startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+            finish();
+        }
     }
 
     //  viewpager change listener
@@ -191,7 +202,6 @@ public class WelcomeActivity extends AppCompatActivity {
         public boolean isViewFromObject(View view, Object obj) {
             return view == obj;
         }
-
 
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {

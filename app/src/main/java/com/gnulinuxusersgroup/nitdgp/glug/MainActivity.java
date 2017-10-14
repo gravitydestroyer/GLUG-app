@@ -90,7 +90,8 @@ public class MainActivity extends AppCompatActivity
 			return true;
 		}
 		if (id == R.id.aboutus) {
-			Intent intent = new Intent(MainActivity.this, AboutUsActivity.class);
+			Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+			intent.putExtra(WelcomeActivity.FORCE_WELCOME_ACTIVITY, true);
 			startActivity(intent);
 			return true;
 		}

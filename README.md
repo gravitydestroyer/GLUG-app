@@ -6,6 +6,6 @@ and the open-sourse fest **MUKTI**
 
 _Feel free to contribute to our repository_
 
-**Link** -->[Glug App](https://github.com/gravitydestroyer/GLUG)
+**Link** -->[Glug App](https://github.com/lugnitdgp/GLUG-app)
 
 Thank you. Keep contributing!

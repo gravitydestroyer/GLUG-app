@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="custom_button_color">#501075</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#fff</color>

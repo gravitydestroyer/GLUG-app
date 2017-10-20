@@ -1,4 +1,9 @@
-# GLUG APP
+
+
+![GLUG LOGO](http://nitdgplug.org/images/logo.png)
+
+
+# GLUG Android App
 ===========
 
 This is a simple app that keeps us in touch with the events and proceedings of the **GNU LINUX USER'S GROUP,NIT DURGAPUR**
